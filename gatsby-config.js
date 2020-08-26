@@ -3,25 +3,25 @@ module.exports = {
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
-      option: {
-        name: `pages`,
-        path: `${__dirname}/src/pages`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      option: {
+      options: {
         name: `posts`,
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/src/posts/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
-      option: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
       },
     },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   option:
+    //     name: `images`,
+    //     path: `${__dirname}/src/images/`,
+    //
+    //
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
